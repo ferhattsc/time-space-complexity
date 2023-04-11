@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() {
+  int n, i, j;
+  printf("Enter the number of rows (between 1 and 100): ");
+  scanf("%d", &n);
+  int a[n][n], b[n][n], sum[n][n];
+
+  printf("\nEnter elements of 1st matrix:\n");
+  for (i = 0; i < n; ++i){
+    for (j = 0; j < n; ++j) {
+      printf("Enter element 1st matrix a%d%d: ", i + 1, j + 1);
+      scanf("%d", &a[i][j]);
+      printf("Enter element  2nd matrix b%d%d: ", i + 1, j + 1);
+      scanf("%d", &b[i][j]);
+    }
+}
+
+  for (i = 0; i < n; ++i){
+    for (j = 0; j < n; ++j) {
+      sum[i][j] = a[i][j] + b[i][j];
+      printf("%d   ", sum[i][j]);
+      if (j == n - 1) {
+        printf("\n\n");
+      }
+    }
+   }
+  return 0;
+}
+//zaman karmaşıklığı --- O(n^2)
+//yer karmaşıklığı-----O(n^2)
