@@ -1,2 +1,2 @@
 # time-space-complexity
-Yer ve zaman karmaşıklığı hesaplayan proje
+Dosya içerisindeki kodu okuyup Big O notasyonuna göre zaman ve yer karmaşıklığını hesaplayıp dosyadan okunan kodun çalıştığındaki süreyi bulan proje
